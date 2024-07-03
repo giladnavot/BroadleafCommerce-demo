@@ -50,6 +50,48 @@ classDef rootsStyle color:#000000,fill:#00FFF4
 classDef Style1 color:#000000,fill:#00FFAA
 classDef Style2 color:#000000,fill:#FFFF00
 classDef Style3 color:#000000,fill:#AA7CB9
+
+%% Swimm:
+%% graph TD;
+%% subgraph <SwmPath>[core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service//](/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service//)</SwmPath>
+%%   calculateTaxForOrder:::mainFlowStyle --> <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service/tax/provider/SimpleTaxProvider.java" pos="99:5:5" line-data="    protected void handleFulfillmentGroupItemTaxes(FulfillmentGroup fulfillmentGroup) {">`handleFulfillmentGroupItemTaxes`</SwmToken>
+%% end
+%% subgraph <SwmPath>[core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service//](/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service//)</SwmPath>
+%%   calculateTaxForOrder:::mainFlowStyle --> <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service/tax/provider/SimpleTaxProvider.java" pos="91:1:1" line-data="                handleFulfillmentGroupFeeTaxes(fulfillmentGroup);">`handleFulfillmentGroupFeeTaxes`</SwmToken>
+%% end
+%% subgraph <SwmPath>[core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service//](/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service//)</SwmPath>
+%%   calculateTaxForOrder:::mainFlowStyle --> <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service/tax/provider/SimpleTaxProvider.java" pos="92:1:1" line-data="                handleFulfillmentGroupTaxes(fulfillmentGroup);">`handleFulfillmentGroupTaxes`</SwmToken>
+%% end
+%% subgraph <SwmPath>[core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service//](/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service//)</SwmPath>
+%%   handleFulfillmentGroupTaxes:::mainFlowStyle --> <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service/tax/provider/SimpleTaxProvider.java" pos="102:1:1" line-data="                applyTaxFactor(fgItem.getTaxes(), determineItemTaxRate(fulfillmentGroup.getAddress()), fgItem.getTotalItemTaxableAmount());">`applyTaxFactor`</SwmToken>
+%% end
+%% subgraph <SwmPath>[core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/util//](/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/util//)</SwmPath>
+%%   applyTaxFactor:::mainFlowStyle --> add
+%% end
+%% subgraph <SwmPath>[core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service//](/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service//)</SwmPath>
+%%   applyTaxFactor:::mainFlowStyle --> <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service/tax/provider/SimpleTaxProvider.java" pos="126:3:3" line-data="                tax.setType(TaxType.COMBINED);">`setType`</SwmToken>
+%% end
+%% subgraph <SwmPath>[core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/util//](/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/util//)</SwmPath>
+%%   <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service/tax/provider/SimpleTaxProvider.java" pos="126:3:3" line-data="                tax.setType(TaxType.COMBINED);">`setType`</SwmToken> --> put
+%% end
+%% subgraph <SwmPath>[core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/util//](/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/util//)</SwmPath>
+%%   put --> add
+%% end
+%% subgraph <SwmPath>[core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/util//](/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/util//)</SwmPath>
+%%   add --> <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/util/queue/ZookeeperDistributedQueue.java" pos="397:1:1" line-data="        writeToQueue(elementsToAdd, -1L);">`writeToQueue`</SwmToken>
+%% end
+%% subgraph <SwmPath>[core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/util//](/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/util//)</SwmPath>
+%%   <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/util/queue/ZookeeperDistributedQueue.java" pos="397:1:1" line-data="        writeToQueue(elementsToAdd, -1L);">`writeToQueue`</SwmToken> --> <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/util/lock/ReentrantDistributedZookeeperLock.java" pos="336:5:5" line-data="    public void lockInterruptibly() throws InterruptedException {">`lockInterruptibly`</SwmToken>
+%% end
+%% subgraph <SwmPath>[core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/util//](/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/util//)</SwmPath>
+%%   <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/util/queue/ZookeeperDistributedQueue.java" pos="397:1:1" line-data="        writeToQueue(elementsToAdd, -1L);">`writeToQueue`</SwmToken> --> <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/util/lock/ReentrantDistributedZookeeperLock.java" pos="345:5:5" line-data="    public boolean tryLock() {">`tryLock`</SwmToken>
+%% end
+%% 
+%% classDef mainFlowStyle color:#000000,fill:#7CB9F4
+%% classDef rootsStyle color:#000000,fill:#00FFF4
+%% classDef Style1 color:#000000,fill:#00FFAA
+%% classDef Style2 color:#000000,fill:#FFFF00
+%% classDef Style3 color:#000000,fill:#AA7CB9
 ```
 
 <SwmSnippet path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service/tax/provider/SimpleTaxProvider.java" line="99">
@@ -58,7 +100,7 @@ classDef Style3 color:#000000,fill:#AA7CB9
 
 # Calculating tax for an order
 
-The `calculateTaxForOrder` function initiates the tax calculation process. It calls `handleFulfillmentGroupItemTaxes`, `handleFulfillmentGroupFeeTaxes`, and `handleFulfillmentGroupTaxes` to calculate taxes for different components of the order.
+The <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service/module/TaxModule.java" pos="35:5:5" line-data="    public Order calculateTaxForOrder(Order order) throws TaxException;">`calculateTaxForOrder`</SwmToken> function initiates the tax calculation process. It calls <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service/tax/provider/SimpleTaxProvider.java" pos="99:5:5" line-data="    protected void handleFulfillmentGroupItemTaxes(FulfillmentGroup fulfillmentGroup) {">`handleFulfillmentGroupItemTaxes`</SwmToken>, <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service/tax/provider/SimpleTaxProvider.java" pos="91:1:1" line-data="                handleFulfillmentGroupFeeTaxes(fulfillmentGroup);">`handleFulfillmentGroupFeeTaxes`</SwmToken>, and <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service/tax/provider/SimpleTaxProvider.java" pos="92:1:1" line-data="                handleFulfillmentGroupTaxes(fulfillmentGroup);">`handleFulfillmentGroupTaxes`</SwmToken> to calculate taxes for different components of the order.
 
 ```java
     protected void handleFulfillmentGroupItemTaxes(FulfillmentGroup fulfillmentGroup) {
@@ -80,7 +122,7 @@ The `calculateTaxForOrder` function initiates the tax calculation process. It ca
 
 # Handling taxes for fulfillment group items
 
-`handleFulfillmentGroupItemTaxes` is responsible for calculating taxes for each item in the fulfillment group. It checks if the item is taxable and then applies the tax factor to the taxable amount of the item.
+<SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service/tax/provider/SimpleTaxProvider.java" pos="99:5:5" line-data="    protected void handleFulfillmentGroupItemTaxes(FulfillmentGroup fulfillmentGroup) {">`handleFulfillmentGroupItemTaxes`</SwmToken> is responsible for calculating taxes for each item in the fulfillment group. It checks if the item is taxable and then applies the tax factor to the taxable amount of the item.
 
 ```java
     protected void handleFulfillmentGroupItemTaxes(FulfillmentGroup fulfillmentGroup) {
@@ -102,7 +144,7 @@ The `calculateTaxForOrder` function initiates the tax calculation process. It ca
 
 # Applying tax factor
 
-`applyTaxFactor` applies the calculated tax factor to the taxable amount. If the tax factor is non-zero, it either updates the existing tax record or creates a new one. If the tax factor is zero, it removes the existing tax record.
+<SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service/tax/provider/SimpleTaxProvider.java" pos="119:5:5" line-data="    protected void applyTaxFactor(List&lt;TaxDetail&gt; taxes, BigDecimal taxFactor, Money taxMultiplier) {">`applyTaxFactor`</SwmToken> applies the calculated tax factor to the taxable amount. If the tax factor is non-zero, it either updates the existing tax record or creates a new one. If the tax factor is zero, it removes the existing tax record.
 
 ```java
     protected void applyTaxFactor(List<TaxDetail> taxes, BigDecimal taxFactor, Money taxMultiplier) {
@@ -133,7 +175,7 @@ The `calculateTaxForOrder` function initiates the tax calculation process. It ca
 
 # Setting the type of shipping service
 
-`setType` sets the type of the shipping service. This is important as different types of shipping services may have different tax rates.
+<SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service/tax/provider/SimpleTaxProvider.java" pos="126:3:3" line-data="                tax.setType(TaxType.COMBINED);">`setType`</SwmToken> sets the type of the shipping service. This is important as different types of shipping services may have different tax rates.
 
 ```java
 /*-
@@ -158,7 +200,7 @@ The `calculateTaxForOrder` function initiates the tax calculation process. It ca
 
 # Adding the calculated tax to a distributed queue
 
-The `put` function adds the calculated tax to a distributed queue. This queue can be used to process the tax information asynchronously.
+The <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/util/queue/ZookeeperDistributedQueue.java" pos="394:5:5" line-data="    public void put(T e) throws InterruptedException {">`put`</SwmToken> function adds the calculated tax to a distributed queue. This queue can be used to process the tax information asynchronously.
 
 ```java
     @Override
@@ -177,4 +219,4 @@ The `put` function adds the calculated tax to a distributed queue. This queue ca
 
 *This is an auto-generated document by Swimm AI 🌊 and has not yet been verified by a human*
 
-<SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=" repo-name="BroadleafCommerce-demo" doc-type="flows"><sup>Powered by [Swimm](/)</sup></SwmMeta>
+<SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=" repo-name="BroadleafCommerce-demo"><sup>Powered by [Swimm](https://app.swimm.io/)</sup></SwmMeta>

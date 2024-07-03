@@ -17,11 +17,12 @@ graph TD;
 
 ### Core
 
-The 'core' directory is the heart of the Broadleaf Commerce framework. It contains several subdirectories, each housing different components of the framework. For instance, the 'broadleaf-profile' directory contains code related to user profiles, while the 'broadleaf-framework' directory contains the main framework code. One of the key classes in the 'core' directory is the <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/search/service/solr/SolrConfiguration.java" pos="52:4:4" line-data="public class SolrConfiguration implements InitializingBean {">`SolrConfiguration`</SwmToken> class, which holds the Solr server configuration. This class is used across multiple other classes, indicating its importance in the framework. Another key component is the <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/search/service/solr/SolrHelperService.java" pos="48:4:4" line-data="public interface SolrHelperService {">`SolrHelperService`</SwmToken> interface, which provides methods for handling Solr cores and converting index fields. Overall, the 'core' directory is essential for the operation and functionality of the Broadleaf Commerce framework.
+The 'core' directory is the heart of the Broadleaf Commerce framework. It contains several subdirectories, each housing different components of the framework. For instance, the 'broadleaf-profile' directory contains code related to user profiles, while the 'broadleaf-framework' directory contains the main framework code.&nbsp;
+
+One of the key classes in the 'core' directory is the <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/search/service/solr/SolrConfiguration.java" pos="52:4:4" line-data="public class SolrConfiguration implements InitializingBean {">`SolrConfiguration`</SwmToken> class, which holds the Solr server configuration. This class is used across multiple other classes, indicating its importance in the framework. Another key component is the <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/search/service/solr/SolrHelperService.java" pos="48:4:4" line-data="public interface SolrHelperService {">`SolrHelperService`</SwmToken> interface, which provides methods for handling Solr cores and converting index fields. Overall, the 'core' directory is essential for the operation and functionality of the Broadleaf Commerce framework.
 
 - <SwmLink doc-title="Overview of Core in BroadleafCommerce-demo">[Overview of Core in BroadleafCommerce-demo](/.swm/overview-of-core-in-broadleafcommerce-demo.kndjxtj8.sw.md)</SwmLink>
 - <SwmLink doc-title="Maven Configuration in BroadleafCommerce Framework Web">[Maven Configuration in BroadleafCommerce Framework Web](/.swm/maven-configuration-in-broadleafcommerce-framework-web.11xzsdpn.sw.md)</SwmLink>
-- &nbsp;
 - <SwmLink doc-title="Offer Filtering and Application">[Offer Filtering and Application](/.swm/offer-filtering-and-application.sucqoiqa.sw.md)</SwmLink>
 - <SwmLink doc-title="Applying a Payment to an Order">[Applying a Payment to an Order](/.swm/applying-a-payment-to-an-order.5koj77le.sw.md)</SwmLink>
 - <SwmLink doc-title="Retrieving and Processing a Robots File">[Retrieving and Processing a Robots File](/.swm/retrieving-and-processing-a-robots-file.o9f85im9.sw.md)</SwmLink>
@@ -29,176 +30,35 @@ The 'core' directory is the heart of the Broadleaf Commerce framework. It contai
 - <SwmLink doc-title="Applying Fulfillment Group Offers to an Order">[Applying Fulfillment Group Offers to an Order](/.swm/applying-fulfillment-group-offers-to-an-order.n2k77nuy.sw.md)</SwmLink>
 - <SwmLink doc-title="SKU Margin Calculation">[SKU Margin Calculation](/.swm/sku-margin-calculation.txncm6ya.sw.md)</SwmLink>
 - <SwmLink doc-title="Applying and Comparing Order and Item Offers">[Applying and Comparing Order and Item Offers](/.swm/applying-and-comparing-order-and-item-offers.9gxwi395.sw.md)</SwmLink>
-- <SwmLink doc-title="Handling Uncacheable Data">[Handling Uncacheable Data](/.swm/handling-uncacheable-data.3zld6l0g.sw.md)</SwmLink>
 - <SwmLink doc-title="Process of Finding Related Products">[Process of Finding Related Products](/.swm/process-of-finding-related-products.l3r0deq1.sw.md)</SwmLink>
 - <SwmLink doc-title="Populating Model Variables Process">[Populating Model Variables Process](/.swm/populating-model-variables-process.xcjjxgfb.sw.md)</SwmLink>
 - <SwmLink doc-title="Product Search and Management Process">[Product Search and Management Process](/.swm/product-search-and-management-process.siogbfty.sw.md)</SwmLink>
 - <SwmLink doc-title="Passthrough Checkout Process">[Passthrough Checkout Process](/.swm/passthrough-checkout-process.aylksnyn.sw.md)</SwmLink>
 - <SwmLink doc-title="Automatic Bundling Process">[Automatic Bundling Process](/.swm/automatic-bundling-process.swfcuh0l.sw.md)</SwmLink>
 - <SwmLink doc-title="Adding a Product to the Cart Process">[Adding a Product to the Cart Process](/.swm/adding-a-product-to-the-cart-process.ynvtol0a.sw.md)</SwmLink>
-- <SwmLink doc-title="Shopping Cart Update Process">[Shopping Cart Update Process](/.swm/shopping-cart-update-process.5g2dz2qa.sw.md)</SwmLink>
-- <SwmLink doc-title="Request Handling in Category Controller">[Request Handling in Category Controller](/.swm/request-handling-in-category-controller.2hja872e.sw.md)</SwmLink>
-- <SwmLink doc-title="Fulfillment Item Pricing Process">[Fulfillment Item Pricing Process](/.swm/fulfillment-item-pricing-process.o7je8jze.sw.md)</SwmLink>
-- <SwmLink doc-title="One-Page Checkout Process">[One-Page Checkout Process](/.swm/one-page-checkout-process.fgo1ydi1.sw.md)</SwmLink>
-- <SwmLink doc-title="Offer Filtering and Validation Process">[Offer Filtering and Validation Process](/.swm/offer-filtering-and-validation-process.oigo2xl0.sw.md)</SwmLink>
-- <SwmLink doc-title="Admin Request Handling in Broadleaf Commerce">[Admin Request Handling in Broadleaf Commerce](/.swm/admin-request-handling-in-broadleaf-commerce.pui2sll1.sw.md)</SwmLink>
-- <SwmLink doc-title="Moving an Item to the Cart Process">[Moving an Item to the Cart Process](/.swm/moving-an-item-to-the-cart-process.xih3z53f.sw.md)</SwmLink>
-- <SwmLink doc-title="Moving Items from Wishlist to Cart Process">[Moving Items from Wishlist to Cart Process](/.swm/moving-items-from-wishlist-to-cart-process.23tnme9s.sw.md)</SwmLink>
-- <SwmLink doc-title="Breadcrumb Modification and Wishlist Management">[Breadcrumb Modification and Wishlist Management](/.swm/breadcrumb-modification-and-wishlist-management.3x3anim9.sw.md)</SwmLink>
-- <SwmLink doc-title="Product Promotion and Wishlist Management">[Product Promotion and Wishlist Management](/.swm/product-promotion-and-wishlist-management.ffp904tu.sw.md)</SwmLink>
-- <SwmLink doc-title="Adding an Item to the Cart Process">[Adding an Item to the Cart Process](/.swm/adding-an-item-to-the-cart-process.0xbblne9.sw.md)</SwmLink>
-- <SwmLink doc-title="Purge Order History Process">[Purge Order History Process](/.swm/purge-order-history-process.v6hp61ob.sw.md)</SwmLink>
-- <SwmLink doc-title="Modifying Breadcrumb List Process">[Modifying Breadcrumb List Process](/.swm/modifying-breadcrumb-list-process.rhx59af2.sw.md)</SwmLink>
 - <SwmLink doc-title="Breadcrumb Modification Process">[Breadcrumb Modification Process](/.swm/breadcrumb-modification-process.q83ncaz0.sw.md)</SwmLink>
 - <SwmLink doc-title="Shopping Cart Management and Product Attribute Modification">[Shopping Cart Management and Product Attribute Modification](/.swm/shopping-cart-management-and-product-attribute-modification.81yl3vss.sw.md)</SwmLink>
 - <SwmLink doc-title="Shopping Cart Management">[Shopping Cart Management](/.swm/shopping-cart-management.8z4brrvb.sw.md)</SwmLink>
 - <SwmLink doc-title="Product Linked Data Generation Process">[Product Linked Data Generation Process](/.swm/product-linked-data-generation-process.pew8ykwz.sw.md)</SwmLink>
 - <SwmLink doc-title="Rule Validation and Management">[Rule Validation and Management](/.swm/rule-validation-and-management.7hywnvr7.sw.md)</SwmLink>
 - <SwmLink doc-title="Order Tax Calculation Process">[Order Tax Calculation Process](/.swm/order-tax-calculation-process.0m3s9t83.sw.md)</SwmLink>
-- <SwmLink doc-title="Adding an Item to a Wishlist">[Adding an Item to a Wishlist](/.swm/adding-an-item-to-a-wishlist.illdojl1.sw.md)</SwmLink>
-- <SwmLink doc-title="SEO Properties Generation Flow">[SEO Properties Generation Flow](/.swm/seo-properties-generation-flow.ivn2jd98.sw.md)</SwmLink>
-- <SwmLink doc-title="Order Item Addition Process">[Order Item Addition Process](/.swm/order-item-addition-process.65zq54ou.sw.md)</SwmLink>
-- <SwmLink doc-title="Saving a Billing Address Process">[Saving a Billing Address Process](/.swm/saving-a-billing-address-process.nzhlkeid.sw.md)</SwmLink>
-- <SwmLink doc-title="Page Retrieval by URI Process">[Page Retrieval by URI Process](/.swm/page-retrieval-by-uri-process.irnohlfe.sw.md)</SwmLink>
-- <SwmLink doc-title="Add Workflow Price Order Process">[Add Workflow Price Order Process](/.swm/add-workflow-price-order-process.j32cphdq.sw.md)</SwmLink>
-- <SwmLink doc-title="Media Asset Handling">[Media Asset Handling](/.swm/media-asset-handling.lb0czkct.sw.md)</SwmLink>
-- <SwmLink doc-title="Adding a New Collection Item in Broadleaf Commerce">[Adding a New Collection Item in Broadleaf Commerce](/.swm/adding-a-new-collection-item-in-broadleaf-commerce.xjs6rury.sw.md)</SwmLink>
-- <SwmLink doc-title="Cart Purging Process">[Cart Purging Process](/.swm/cart-purging-process.c7sd7shl.sw.md)</SwmLink>
-- <SwmLink doc-title="Multi-ship Options Generation Process">[Multi-ship Options Generation Process](/.swm/multi-ship-options-generation-process.al97vvfc.sw.md)</SwmLink>
-- <SwmLink doc-title="Customer Purge Process">[Customer Purge Process](/.swm/customer-purge-process.vqp55idm.sw.md)</SwmLink>
-- <SwmLink doc-title="SKU Pricing Process">[SKU Pricing Process](/.swm/sku-pricing-process.zzbzr5q3.sw.md)</SwmLink>
-- <SwmLink doc-title="Handling Sale Prices">[Handling Sale Prices](/.swm/handling-sale-prices.fhnkah89.sw.md)</SwmLink>
 - <SwmLink doc-title="Generating and Storing Homepage Linked Data">[Generating and Storing Homepage Linked Data](/.swm/generating-and-storing-homepage-linked-data.y6v5q4px.sw.md)</SwmLink>
-- <SwmLink doc-title="Saving a Billing Address Process">[Saving a Billing Address Process](/.swm/saving-a-billing-address-process.uh4aub39.sw.md)</SwmLink>
-- <SwmLink doc-title="SKU Persistence Handling">[SKU Persistence Handling](/.swm/sku-persistence-handling.alq2agu8.sw.md)</SwmLink>
-- <SwmLink doc-title="Adding a Translation in BroadleafCommerce">[Adding a Translation in BroadleafCommerce](/.swm/adding-a-translation-in-broadleafcommerce.gmnzb8tj.sw.md)</SwmLink>
-- <SwmLink doc-title="Handling of Typed Entity Requests">[Handling of Typed Entity Requests](/.swm/handling-of-typed-entity-requests.00oqhbvc.sw.md)</SwmLink>
-- <SwmLink doc-title="SKU Persistence Process">[SKU Persistence Process](/.swm/sku-persistence-process.kjzct023.sw.md)</SwmLink>
-- <SwmLink doc-title="Managing Promotional Messages and Order Items">[Managing Promotional Messages and Order Items](/.swm/managing-promotional-messages-and-order-items.s93nn6w0.sw.md)</SwmLink>
-- <SwmLink doc-title="Reading Filtered Active Products by Category">[Reading Filtered Active Products by Category](/.swm/reading-filtered-active-products-by-category.h8330zzj.sw.md)</SwmLink>
-- <SwmLink doc-title="Reading and Filtering Active Products Process">[Reading and Filtering Active Products Process](/.swm/reading-and-filtering-active-products-process.own8tjkt.sw.md)</SwmLink>
-- <SwmLink doc-title="Updating Sale and Retail Prices Process">[Updating Sale and Retail Prices Process](/.swm/updating-sale-and-retail-prices-process.jyycp9d9.sw.md)</SwmLink>
-- <SwmLink doc-title="Handling Collection Items in Broadleaf Commerce">[Handling Collection Items in Broadleaf Commerce](/.swm/handling-collection-items-in-broadleaf-commerce.pbc6cbss.sw.md)</SwmLink>
-- <SwmLink doc-title="Populating Category Values in Broadleaf Commerce">[Populating Category Values in Broadleaf Commerce](/.swm/populating-category-values-in-broadleaf-commerce.pszr980f.sw.md)</SwmLink>
-- <SwmLink doc-title="Adding an Item to an Order Process">[Adding an Item to an Order Process](/.swm/adding-an-item-to-an-order-process.l7jha0os.sw.md)</SwmLink>
-- <SwmLink doc-title="Calculation of Potential Savings for a Product Bundle">[Calculation of Potential Savings for a Product Bundle](/.swm/calculation-of-potential-savings-for-a-product-bundle.h96w87mc.sw.md)</SwmLink>
-- <SwmLink doc-title="Total Adjustments Value Calculation">[Total Adjustments Value Calculation](/.swm/total-adjustments-value-calculation.3h4irglf.sw.md)</SwmLink>
-- <SwmLink doc-title="Future Credit Adjustments Process">[Future Credit Adjustments Process](/.swm/future-credit-adjustments-process.9tvs9ngh.sw.md)</SwmLink>
-- <SwmLink doc-title="Content Retrieval and Structuring Process">[Content Retrieval and Structuring Process](/.swm/content-retrieval-and-structuring-process.4c4bsy1q.sw.md)</SwmLink>
-- <SwmLink doc-title="Converting Structured Content to DTOs">[Converting Structured Content to DTOs](/.swm/converting-structured-content-to-dtos.si6vd8yp.sw.md)</SwmLink>
-- <SwmLink doc-title="Cart State Handling and Update Process">[Cart State Handling and Update Process](/.swm/cart-state-handling-and-update-process.m15bjxzp.sw.md)</SwmLink>
-- <SwmLink doc-title="Solr Index Update Process">[Solr Index Update Process](/.swm/solr-index-update-process.q81x9em6.sw.md)</SwmLink>
-- <SwmLink doc-title="Product Request Handling Process">[Product Request Handling Process](/.swm/product-request-handling-process.cmn1mqt2.sw.md)</SwmLink>
-- <SwmLink doc-title="Item Removal Process from Cart">[Item Removal Process from Cart](/.swm/item-removal-process-from-cart.ry545y63.sw.md)</SwmLink>
-- <SwmLink doc-title="Item Removal Process in Cart">[Item Removal Process in Cart](/.swm/item-removal-process-in-cart.q4ks46cf.sw.md)</SwmLink>
-- <SwmLink doc-title="Inventory Decrement Process during Checkout">[Inventory Decrement Process during Checkout](/.swm/inventory-decrement-process-during-checkout.u5rspsct.sw.md)</SwmLink>
-- <SwmLink doc-title="Cart Update Process">[Cart Update Process](/.swm/cart-update-process.37r49p5d.sw.md)</SwmLink>
-- <SwmLink doc-title="Modifying the Breadcrumb List Process">[Modifying the Breadcrumb List Process](/.swm/modifying-the-breadcrumb-list-process.50t2d7wr.sw.md)</SwmLink>
-- <SwmLink doc-title="Adding an Item to the Wishlist Process">[Adding an Item to the Wishlist Process](/.swm/adding-an-item-to-the-wishlist-process.q7wowbv3.sw.md)</SwmLink>
-- <SwmLink doc-title="Adding an Item to a Wishlist">[Adding an Item to a Wishlist](/.swm/adding-an-item-to-a-wishlist.02h5cm5t.sw.md)</SwmLink>
-- <SwmLink doc-title="Adding an Item with a Price Override to the Cart">[Adding an Item with a Price Override to the Cart](/.swm/adding-an-item-with-a-price-override-to-the-cart.fgdf1d1q.sw.md)</SwmLink>
-- <SwmLink doc-title="Solr Index Update Process">[Solr Index Update Process](/.swm/solr-index-update-process.vvsnnml4.sw.md)</SwmLink>
-- <SwmLink doc-title="SKU Generation Process">[SKU Generation Process](/.swm/sku-generation-process.01zckyxa.sw.md)</SwmLink>
-- <SwmLink doc-title="SKU Generation Process">[SKU Generation Process](/.swm/sku-generation-process.9tnz7o0d.sw.md)</SwmLink>
-- <SwmLink doc-title="Named Parameter Management in E-commerce Framework">[Named Parameter Management in E-commerce Framework](/.swm/named-parameter-management-in-e-commerce-framework.qo4la59e.sw.md)</SwmLink>
-- <SwmLink doc-title="Handling Typeahead Results">[Handling Typeahead Results](/.swm/handling-typeahead-results.6txo0xk7.sw.md)</SwmLink>
-- <SwmLink doc-title="Deletion of Static Assets">[Deletion of Static Assets](/.swm/deletion-of-static-assets.5lrrk62v.sw.md)</SwmLink>
-- <SwmLink doc-title="Process of Removing a Translation Page from Cache">[Process of Removing a Translation Page from Cache](/.swm/process-of-removing-a-translation-page-from-cache.ppo4wx1y.sw.md)</SwmLink>
-- <SwmLink doc-title="Child Category URL Map Generation">[Child Category URL Map Generation](/.swm/child-category-url-map-generation.lunyykti.sw.md)</SwmLink>
-- <SwmLink doc-title="Merging Regular Order Items Process">[Merging Regular Order Items Process](/.swm/merging-regular-order-items-process.7r4htw1y.sw.md)</SwmLink>
-- <SwmLink doc-title="Data Field Validation and Management">[Data Field Validation and Management](/.swm/data-field-validation-and-management.v6r7pdfu.sw.md)</SwmLink>
-- <SwmLink doc-title="Price Management in BundleOrderItemImpl">[Price Management in BundleOrderItemImpl](/.swm/price-management-in-bundleorderitemimpl.whm169q5.sw.md)</SwmLink>
-- <SwmLink doc-title="Start Date Validation Process">[Start Date Validation Process](/.swm/start-date-validation-process.dnzl4qr9.sw.md)</SwmLink>
-- <SwmLink doc-title="Form Visibility and Entity Removal Process">[Form Visibility and Entity Removal Process](/.swm/form-visibility-and-entity-removal-process.s2f9bc7d.sw.md)</SwmLink>
-- <SwmLink doc-title="Entity Saving Process">[Entity Saving Process](/.swm/entity-saving-process.89v69dus.sw.md)</SwmLink>
-- <SwmLink doc-title="Data Validation and Management with MaxGreaterThanMinValidator">[Data Validation and Management with MaxGreaterThanMinValidator](/.swm/data-validation-and-management-with-maxgreaterthanminvalidator.yyy4z0v9.sw.md)</SwmLink>
-- <SwmLink doc-title="Product Cloning Process">[Product Cloning Process](/.swm/product-cloning-process.6qixah1q.sw.md)</SwmLink>
-- <SwmLink doc-title="Merging Offer Codes Process">[Merging Offer Codes Process](/.swm/merging-offer-codes-process.jns1dz9g.sw.md)</SwmLink>
-- <SwmLink doc-title="Linked Data Generation for Product Categories">[Linked Data Generation for Product Categories](/.swm/linked-data-generation-for-product-categories.zq6hbp3t.sw.md)</SwmLink>
-- <SwmLink doc-title="Cost Calculation Process for a Fulfillment Group">[Cost Calculation Process for a Fulfillment Group](/.swm/cost-calculation-process-for-a-fulfillment-group.jsc9c9ku.sw.md)</SwmLink>
-- <SwmLink doc-title="Price Detail Update Process">[Price Detail Update Process](/.swm/price-detail-update-process.txd6ybug.sw.md)</SwmLink>
-- <SwmLink doc-title="Product Value Population in Broadleaf Commerce">[Product Value Population in Broadleaf Commerce](/.swm/product-value-population-in-broadleaf-commerce.zaxg08k4.sw.md)</SwmLink>
-- <SwmLink doc-title="Data Persistence Flow">[Data Persistence Flow](/.swm/data-persistence-flow.57mx9hjv.sw.md)</SwmLink>
-- <SwmLink doc-title="Payment Rollback Process">[Payment Rollback Process](/.swm/payment-rollback-process.7b9a5k3m.sw.md)</SwmLink>
-- <SwmLink doc-title="Order Payment Creation Process">[Order Payment Creation Process](/.swm/order-payment-creation-process.0faoux5d.sw.md)</SwmLink>
-- <SwmLink doc-title="Product Bundle Sale Determination Process">[Product Bundle Sale Determination Process](/.swm/product-bundle-sale-determination-process.vxp4gtxa.sw.md)</SwmLink>
-- <SwmLink doc-title="SKU ID Retrieval for Product Option Values">[SKU ID Retrieval for Product Option Values](/.swm/sku-id-retrieval-for-product-option-values.rwoj3uo1.sw.md)</SwmLink>
-- <SwmLink doc-title="Cart Update and Validation Process">[Cart Update and Validation Process](/.swm/cart-update-and-validation-process.63r6pzeg.sw.md)</SwmLink>
-- <SwmLink doc-title="Order Subtotal Calculation with Adjustments">[Order Subtotal Calculation with Adjustments](/.swm/order-subtotal-calculation-with-adjustments.9a6kdvj2.sw.md)</SwmLink>
-- <SwmLink doc-title="Building a List of Promotable Order Items">[Building a List of Promotable Order Items](/.swm/building-a-list-of-promotable-order-items.156hjotp.sw.md)</SwmLink>
-- <SwmLink doc-title="Admin Request Handling">[Admin Request Handling](/.swm/admin-request-handling.7xz97zk1.sw.md)</SwmLink>
-- <SwmLink doc-title="Product Filtering and Removal Process">[Product Filtering and Removal Process](/.swm/product-filtering-and-removal-process.ntcvkdv7.sw.md)</SwmLink>
-- <SwmLink doc-title="Product Request Handling">[Product Request Handling](/.swm/product-request-handling.cz26piwf.sw.md)</SwmLink>
-- <SwmLink doc-title="Handling Application Events: Item Removal Process">[Handling Application Events: Item Removal Process](/.swm/handling-application-events-item-removal-process.ka5ewgpw.sw.md)</SwmLink>
-- <SwmLink doc-title="Metadata Override and Dynamic Entity Addition Process">[Metadata Override and Dynamic Entity Addition Process](/.swm/metadata-override-and-dynamic-entity-addition-process.x961guqs.sw.md)</SwmLink>
-- <SwmLink doc-title="Fulfillment Groups Matching Process">[Fulfillment Groups Matching Process](/.swm/fulfillment-groups-matching-process.8jq64v76.sw.md)</SwmLink>
-- <SwmLink doc-title="Handling Products in a Shopping Cart">[Handling Products in a Shopping Cart](/.swm/handling-products-in-a-shopping-cart.9oa42w6c.sw.md)</SwmLink>
-- <SwmLink doc-title="Product Availability Validation Process">[Product Availability Validation Process](/.swm/product-availability-validation-process.04zwh4cj.sw.md)</SwmLink>
-- <SwmLink doc-title="Merging Gift Wrap Order Items Process">[Merging Gift Wrap Order Items Process](/.swm/merging-gift-wrap-order-items-process.giaaluax.sw.md)</SwmLink>
-- <SwmLink doc-title="Handling Future Credit Adjustments">[Handling Future Credit Adjustments](/.swm/handling-future-credit-adjustments.u94x35g1.sw.md)</SwmLink>
-- <SwmLink doc-title="Finding Search Results by Category Process">[Finding Search Results by Category Process](/.swm/finding-search-results-by-category-process.x72291o5.sw.md)</SwmLink>
-- <SwmLink doc-title="Product Search Process">[Product Search Process](/.swm/product-search-process.76kxk567.sw.md)</SwmLink>
-- <SwmLink doc-title="Order Tax Calculation Process">[Order Tax Calculation Process](/.swm/order-tax-calculation-process.bnf3pneq.sw.md)</SwmLink>
-- <SwmLink doc-title="SKU Media Management">[SKU Media Management](/.swm/sku-media-management.11c9o5le.sw.md)</SwmLink>
-- <SwmLink doc-title="Solr Index Status Update Process">[Solr Index Status Update Process](/.swm/solr-index-status-update-process.1gufxmwc.sw.md)</SwmLink>
-- <SwmLink doc-title="Record Management Process">[Record Management Process](/.swm/record-management-process.vhnj5q0b.sw.md)</SwmLink>
-- <SwmLink doc-title="Cookie Handling Process">[Cookie Handling Process](/.swm/cookie-handling-process.2kr3nav5.sw.md)</SwmLink>
-- <SwmLink doc-title="Product Duplication Process">[Product Duplication Process](/.swm/product-duplication-process.jufq71yn.sw.md)</SwmLink>
-- <SwmLink doc-title="Record Retrieval and Storage Process">[Record Retrieval and Storage Process](/.swm/record-retrieval-and-storage-process.uuyefonn.sw.md)</SwmLink>
-- <SwmLink doc-title="Populating the Product Catalog Structure">[Populating the Product Catalog Structure](/.swm/populating-the-product-catalog-structure.kfznrxht.sw.md)</SwmLink>
-- <SwmLink doc-title="Adding a New Entity Process">[Adding a New Entity Process](/.swm/adding-a-new-entity-process.ecbj0v31.sw.md)</SwmLink>
-- <SwmLink doc-title="Distributed Queue Handling in Broadleaf Commerce">[Distributed Queue Handling in Broadleaf Commerce](/.swm/distributed-queue-handling-in-broadleaf-commerce.qoj1ka22.sw.md)</SwmLink>
-- <SwmLink doc-title="JSON Facet Resolution Process">[JSON Facet Resolution Process](/.swm/json-facet-resolution-process.3ms4mbmo.sw.md)</SwmLink>
-- <SwmLink doc-title="Building an Offer List for an Order">[Building an Offer List for an Order](/.swm/building-an-offer-list-for-an-order.grvrhm4s.sw.md)</SwmLink>
-- <SwmLink doc-title="Customer Payment Creation Process">[Customer Payment Creation Process](/.swm/customer-payment-creation-process.l05pzobg.sw.md)</SwmLink>
-- <SwmLink doc-title="Adding an Order Item to an Order">[Adding an Order Item to an Order](/.swm/adding-an-order-item-to-an-order.zpwggclb.sw.md)</SwmLink>
-- <SwmLink doc-title="Adding an Order Item to a Bundle in Broadleaf Commerce">[Adding an Order Item to a Bundle in Broadleaf Commerce](/.swm/adding-an-order-item-to-a-bundle-in-broadleaf-commerce.fdibzfuj.sw.md)</SwmLink>
-- <SwmLink doc-title="Creation of Dynamic Price Discrete Order Items">[Creation of Dynamic Price Discrete Order Items](/.swm/creation-of-dynamic-price-discrete-order-items.i0itfdhz.sw.md)</SwmLink>
-- <SwmLink doc-title="Cart Item Quantity Update Process">[Cart Item Quantity Update Process](/.swm/cart-item-quantity-update-process.1tdq27oz.sw.md)</SwmLink>
-- <SwmLink doc-title="Adding an Attribute to the Current Order">[Adding an Attribute to the Current Order](/.swm/adding-an-attribute-to-the-current-order.7a9gb1la.sw.md)</SwmLink>
-- <SwmLink doc-title="Cart Rule Processing Flow">[Cart Rule Processing Flow](/.swm/cart-rule-processing-flow.y1hc3ga5.sw.md)</SwmLink>
-- <SwmLink doc-title="Applying Cart Rules in Broadleaf Commerce">[Applying Cart Rules in Broadleaf Commerce](/.swm/applying-cart-rules-in-broadleaf-commerce.23h5a3ku.sw.md)</SwmLink>
-- <SwmLink doc-title="URL Handling and Content Management">[URL Handling and Content Management](/.swm/url-handling-and-content-management.gmn2xarz.sw.md)</SwmLink>
-- <SwmLink doc-title="Fulfillment Group Total Price Calculation and Management">[Fulfillment Group Total Price Calculation and Management](/.swm/fulfillment-group-total-price-calculation-and-management.c9e2ijt4.sw.md)</SwmLink>
-- <SwmLink doc-title="Product Option Management Flow">[Product Option Management Flow](/.swm/product-option-management-flow.6i16o1vy.sw.md)</SwmLink>
-- <SwmLink doc-title="Customer State Handling">[Customer State Handling](/.swm/customer-state-handling.767i9rpw.sw.md)</SwmLink>
-- <SwmLink doc-title="Order Subtotal Calculation Process">[Order Subtotal Calculation Process](/.swm/order-subtotal-calculation-process.n65c0yao.sw.md)</SwmLink>
-- <SwmLink doc-title="Setting Order Subtotal to Price Without Adjustments">[Setting Order Subtotal to Price Without Adjustments](/.swm/setting-order-subtotal-to-price-without-adjustments.kezcqr07.sw.md)</SwmLink>
-- <SwmLink doc-title="Linked Data Generation and Management">[Linked Data Generation and Management](/.swm/linked-data-generation-and-management.d2uigdyv.sw.md)</SwmLink>
-- <SwmLink doc-title="Item Addition to Order Process">[Item Addition to Order Process](/.swm/item-addition-to-order-process.9964ew24.sw.md)</SwmLink>
-- <SwmLink doc-title="Consolidating Fulfillment Fees Process">[Consolidating Fulfillment Fees Process](/.swm/consolidating-fulfillment-fees-process.ty45jb5e.sw.md)</SwmLink>
-- <SwmLink doc-title="Updating Product Options in Order Items">[Updating Product Options in Order Items](/.swm/updating-product-options-in-order-items.i0fsy273.sw.md)</SwmLink>
-- <SwmLink doc-title="Order Fulfillment Process">[Order Fulfillment Process](/.swm/order-fulfillment-process.hk0dpuol.sw.md)</SwmLink>
-- <SwmLink doc-title="Applying Discounts to Order Items">[Applying Discounts to Order Items](/.swm/applying-discounts-to-order-items.dza8etzf.sw.md)</SwmLink>
-- <SwmLink doc-title="Collapsing Shippable Fulfillment Groups in Broadleaf Commerce">[Collapsing Shippable Fulfillment Groups in Broadleaf Commerce](/.swm/collapsing-shippable-fulfillment-groups-in-broadleaf-commerce.ps9sjn9i.sw.md)</SwmLink>
-- <SwmLink doc-title="Reading All Active Product IDs Process">[Reading All Active Product IDs Process](/.swm/reading-all-active-product-ids-process.2k3h4jpx.sw.md)</SwmLink>
-- <SwmLink doc-title="Applying Offers to an Order Process">[Applying Offers to an Order Process](/.swm/applying-offers-to-an-order-process.wexnnscn.sw.md)</SwmLink>
-- <SwmLink doc-title="Future Credit Adjustments in Fulfillment Groups">[Future Credit Adjustments in Fulfillment Groups](/.swm/future-credit-adjustments-in-fulfillment-groups.xig62ke5.sw.md)</SwmLink>
-- <SwmLink doc-title="Static Asset Management">[Static Asset Management](/.swm/static-asset-management.1c3w34vg.sw.md)</SwmLink>
-- <SwmLink doc-title="Recording Offer Usage Process">[Recording Offer Usage Process](/.swm/recording-offer-usage-process.gunvfx3h.sw.md)</SwmLink>
-- <SwmLink doc-title="Saving Multi-ship Options in an Order">[Saving Multi-ship Options in an Order](/.swm/saving-multi-ship-options-in-an-order.kr42mxzy.sw.md)</SwmLink>
-- <SwmLink doc-title="Item Count Calculation Process">[Item Count Calculation Process](/.swm/item-count-calculation-process.rdmjavuj.sw.md)</SwmLink>
-- <SwmLink doc-title="Discount Application and Queue Management Flow">[Discount Application and Queue Management Flow](/.swm/discount-application-and-queue-management-flow.ad0umovx.sw.md)</SwmLink>
-- <SwmLink doc-title="Determining Offer Changes Process">[Determining Offer Changes Process](/.swm/determining-offer-changes-process.tx5fuidl.sw.md)</SwmLink>
-- <SwmLink doc-title="Counting Total Offers Process">[Counting Total Offers Process](/.swm/counting-total-offers-process.cfavuc3l.sw.md)</SwmLink>
-- <SwmLink doc-title="Adding Metadata from Mapping Data">[Adding Metadata from Mapping Data](/.swm/adding-metadata-from-mapping-data.1epma9kz.sw.md)</SwmLink>
-- <SwmLink doc-title="Attaching Additional Data to an Order">[Attaching Additional Data to an Order](/.swm/attaching-additional-data-to-an-order.oayxeyyt.sw.md)</SwmLink>
-- <SwmLink doc-title="Solr Index Rebuild Process">[Solr Index Rebuild Process](/.swm/solr-index-rebuild-process.3250krut.sw.md)</SwmLink>
-- <SwmLink doc-title="Static Asset Management">[Static Asset Management](/.swm/static-asset-management.vmp4qek8.sw.md)</SwmLink>
-- <SwmLink doc-title="Static Asset Management Flow">[Static Asset Management Flow](/.swm/static-asset-management-flow.7czdy5dr.sw.md)</SwmLink>
-- <SwmLink doc-title="Structured Content Handling">[Structured Content Handling](/.swm/structured-content-handling.vmfvqcc0.sw.md)</SwmLink>
-- <SwmLink doc-title="Content Management Process">[Content Management Process](/.swm/content-management-process.7i95fmgf.sw.md)</SwmLink>
-- <SwmLink doc-title="Static Asset Management">[Static Asset Management](/.swm/static-asset-management.2k7s93gk.sw.md)</SwmLink>
 - <SwmLink doc-title="Dynamic Fields Management">[Dynamic Fields Management](/.swm/dynamic-fields-management.9q1zp8oe.sw.md)</SwmLink>
 - <SwmLink doc-title="Field Group Setting in Page Templates">[Field Group Setting in Page Templates](/.swm/field-group-setting-in-page-templates.ixvhg5cm.sw.md)</SwmLink>
 - <SwmLink doc-title="Overview of the SkuAttribute Class">[Overview of the SkuAttribute Class](/.swm/overview-of-the-skuattribute-class.fr8j0.sw.md)</SwmLink>
 - <SwmLink doc-title="Introduction to Store">[Introduction to Store](/.swm/introduction-to-store.5gwkjxza.sw.md)</SwmLink>
-- <SwmLink doc-title="Understanding Workflow in Broadleaf Commerce">[Understanding Workflow in Broadleaf Commerce](/.swm/understanding-workflow-in-broadleaf-commerce.8c6mgaia.sw.md)</SwmLink>
 - <SwmLink doc-title="Introduction to Inventory">[Introduction to Inventory](/.swm/introduction-to-inventory.266nrv1t.sw.md)</SwmLink>
+
+
 - **Pricing**
+
   - <SwmLink doc-title="Understanding Pricing in BroadleafCommerce-demo">[Understanding Pricing in BroadleafCommerce-demo](/.swm/understanding-pricing-in-broadleafcommerce-demo.3zt8swag.sw.md)</SwmLink>
   - <SwmLink doc-title="Overview of Workflow">[Overview of Workflow](/.swm/overview-of-workflow.j43yc9ny.sw.md)</SwmLink>
+  - <SwmLink doc-title="SKU Pricing Process">[SKU Pricing Process](/.swm/sku-pricing-process.zzbzr5q3.sw.md)</SwmLink>
+  - <SwmLink doc-title="Fulfillment Item Pricing Process">[Fulfillment Item Pricing Process](/.swm/fulfillment-item-pricing-process.o7je8jze.sw.md)</SwmLink>
+
 - **Search**
+
   - <SwmLink doc-title="Exploring Search Facet">[Exploring Search Facet](/.swm/exploring-search-facet.lq0kw1ld.sw.md)</SwmLink>
   - <SwmLink doc-title="Overview of SearchResult">[Overview of SearchResult](/.swm/overview-of-searchresult.hnl9tjtg.sw.md)</SwmLink>
   - <SwmLink doc-title="Basic Concepts of SearchConfig">[Basic Concepts of SearchConfig](/.swm/basic-concepts-of-searchconfig.h6zbw803.sw.md)</SwmLink>
@@ -226,20 +86,26 @@ The 'core' directory is the heart of the Broadleaf Commerce framework. It contai
     - <SwmLink doc-title="Overview of Solr Index Update">[Overview of Solr Index Update](/.swm/overview-of-solr-index-update.zg1rf4t5.sw.md)</SwmLink>
     - <SwmLink doc-title="Overview of Solr Index Status">[Overview of Solr Index Status](/.swm/overview-of-solr-index-status.j83pykiz.sw.md)</SwmLink>
 
-
 - **Search Redirection**
+
   - <SwmLink doc-title="Introduction to Search Redirection">[Introduction to Search Redirection](/.swm/introduction-to-search-redirection.pbh08coi.sw.md)</SwmLink>
   - <SwmLink doc-title="Basic Concepts of Search Redirect Domain">[Basic Concepts of Search Redirect Domain](/.swm/basic-concepts-of-search-redirect-domain.n75051uu.sw.md)</SwmLink>
   - <SwmLink doc-title="Overview of Search Redirect Service">[Overview of Search Redirect Service](/.swm/overview-of-search-redirect-service.swxjavje.sw.md)</SwmLink>
   - <SwmLink doc-title="Introduction to Search Redirect DAO">[Introduction to Search Redirect DAO](/.swm/introduction-to-search-redirect-dao.rn8uebok.sw.md)</SwmLink>
+
 - **Checkout**
+
   - <SwmLink doc-title="Understanding the Checkout Process">[Understanding the Checkout Process](/.swm/understanding-the-checkout-process.pjrnq7ce.sw.md)</SwmLink>
   - <SwmLink doc-title="Getting Started with Workflow">[Getting Started with Workflow](/.swm/getting-started-with-workflow.y9uakdnb.sw.md)</SwmLink>
+
 - **Payment**
+
   - <SwmLink doc-title="Introduction to Payment">[Introduction to Payment](/.swm/introduction-to-payment.o2xg1vaf.sw.md)</SwmLink>
   - <SwmLink doc-title="Basic Concepts of Domain">[Basic Concepts of Domain](/.swm/basic-concepts-of-domain.9v2g1erl.sw.md)</SwmLink>
   - <SwmLink doc-title="Payment Validation and Confirmation Process">[Payment Validation and Confirmation Process](/.swm/payment-validation-and-confirmation-process.1iuc3hsq.sw.md)</SwmLink>
+
 - **Order Domain**
+
   - <SwmLink doc-title="Overview of Order Domain">[Overview of Order Domain](/.swm/overview-of-order-domain.r1ay55u5.sw.md)</SwmLink>
   - <SwmLink doc-title="Basic Concepts of Order Item">[Basic Concepts of Order Item](/.swm/basic-concepts-of-order-item.xlxvkoln.sw.md)</SwmLink>
   - <SwmLink doc-title="Introduction to Order Attribute">[Introduction to Order Attribute](/.swm/introduction-to-order-attribute.erexw5vj.sw.md)</SwmLink>
@@ -256,7 +122,9 @@ The 'core' directory is the heart of the Broadleaf Commerce framework. It contai
   - **Order Multiship Option**
     - <SwmLink doc-title="Overview of Order Multiship Option">[Overview of Order Multiship Option](/.swm/overview-of-order-multiship-option.28w9oj5h.sw.md)</SwmLink>
     - <SwmLink doc-title="Usage of OrderMultishipOption in the Multiship Context">[Usage of OrderMultishipOption in the Multiship Context](/.swm/usage-of-ordermultishipoption-in-the-multiship-context.gmzhjt1i.sw.md)</SwmLink>
+
 - **Order Service**
+
   - <SwmLink doc-title="Understanding the Order Service">[Understanding the Order Service](/.swm/understanding-the-order-service.9vdtb9mj.sw.md)</SwmLink>
   - <SwmLink doc-title="Exploring Cart Operations">[Exploring Cart Operations](/.swm/exploring-cart-operations.pg0vyx16.sw.md)</SwmLink>
   - <SwmLink doc-title="Understanding Fulfillment">[Understanding Fulfillment](/.swm/understanding-fulfillment.4ole3oxd.sw.md)</SwmLink>
@@ -269,7 +137,9 @@ The 'core' directory is the heart of the Broadleaf Commerce framework. It contai
     - <SwmLink doc-title="Exploring Exceptions">[Exploring Exceptions](/.swm/exploring-exceptions.3s46wsuj.sw.md)</SwmLink>
     - <SwmLink doc-title="Exception Handling in Broadleaf Commerce">[Exception Handling in Broadleaf Commerce](/.swm/exception-handling-in-broadleaf-commerce.0dizla9l.sw.md)</SwmLink>
     - <SwmLink doc-title="Guidelines for Creating New Exception Classes in Broadleaf Commerce">[Guidelines for Creating New Exception Classes in Broadleaf Commerce](/.swm/guidelines-for-creating-new-exception-classes-in-broadleaf-commerce.banxwsl9.sw.md)</SwmLink>
+
 - **Order DAO**
+
   - <SwmLink doc-title="Understanding Order DAO">[Understanding Order DAO](/.swm/understanding-order-dao.77jebmbp.sw.md)</SwmLink>
   - <SwmLink doc-title="Introduction to Fulfillment Group">[Introduction to Fulfillment Group](/.swm/introduction-to-fulfillment-group.1bseyb7j.sw.md)</SwmLink>
   - <SwmLink doc-title="Introduction to Fulfillment Option">[Introduction to Fulfillment Option](/.swm/introduction-to-fulfillment-option.klpf82cs.sw.md)</SwmLink>
