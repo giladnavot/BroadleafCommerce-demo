@@ -106,7 +106,9 @@ classDef Style3 color:#000000,fill:#AA7CB9
 %% classDef Style3 color:#000000,fill:#AA7CB9
 ```
 
-<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="379" collapsed>
+We will now diver deeper into the most important parts of this flow.
+
+<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="379">
 
 ---
 
@@ -142,13 +144,13 @@ The function <SwmToken path="/admin/broadleaf-open-admin-platform/src/main/java/
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/controller/account/BroadleafManageWishlistController.java" line="62" collapsed>
+<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/controller/account/BroadleafManageWishlistController.java" line="62">
 
 ---
 
 # Adding items to the wishlist
 
-The <SwmToken path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/controller/account/BroadleafManageWishlistController.java" pos="62:5:5" line-data="    public String add(HttpServletRequest request, HttpServletResponse response, Model model,">`add`</SwmToken> function is called within the <SwmToken path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" pos="169:1:1" line-data="        populateSectionViewStates(newModelVars);">`populateSectionViewStates`</SwmToken> function. It is responsible for adding items to the user's wishlist.
+<SwmToken path="/admin/broadleaf-open-admin-platform/src/main/java/org/broadleafcommerce/openadmin/processor/AdminUserProcessor.java" pos="68:11:11" line-data="    public Map&lt;String, Object&gt; populateModelVariables(String tagName, Map&lt;String, String&gt; tagAttributes, BroadleafTemplateContext context) {">`populateModelVariables`</SwmToken> calls the function <SwmToken path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" pos="169:1:1" line-data="        populateSectionViewStates(newModelVars);">`populateSectionViewStates`</SwmToken>, with in turn calls the <SwmToken path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/controller/account/BroadleafManageWishlistController.java" pos="62:5:5" line-data="    public String add(HttpServletRequest request, HttpServletResponse response, Model model,">`add`</SwmToken> function. This function responsible for adding items to the user's wishlist.
 
 ```java
     public String add(HttpServletRequest request, HttpServletResponse response, Model model,
@@ -170,13 +172,13 @@ The <SwmToken path="/core/broadleaf-framework-web/src/main/java/org/broadleafcom
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="384" collapsed>
+<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="384">
 
 ---
 
 # Handling fulfillment options and estimation
 
-The <SwmToken path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" pos="384:5:5" line-data="    protected void populateFulfillmentOptionsAndEstimationOnModel(Map&lt;String, Object&gt; localVars) {">`populateFulfillmentOptionsAndEstimationOnModel`</SwmToken> function is responsible for retrieving all fulfillment options for the cart and estimating the cost of applying these options on the first shippable fulfillment group.
+<SwmToken path="/admin/broadleaf-open-admin-platform/src/main/java/org/broadleafcommerce/openadmin/processor/AdminUserProcessor.java" pos="68:11:11" line-data="    public Map&lt;String, Object&gt; populateModelVariables(String tagName, Map&lt;String, String&gt; tagAttributes, BroadleafTemplateContext context) {">`populateModelVariables`</SwmToken> also calls the <SwmToken path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" pos="384:5:5" line-data="    protected void populateFulfillmentOptionsAndEstimationOnModel(Map&lt;String, Object&gt; localVars) {">`populateFulfillmentOptionsAndEstimationOnModel`</SwmToken> function. It is responsible for retrieving all fulfillment options for the cart and estimating the cost of applying these options on the first shippable fulfillment group.
 
 ```java
     protected void populateFulfillmentOptionsAndEstimationOnModel(Map<String, Object> localVars) {
@@ -204,7 +206,7 @@ The <SwmToken path="/core/broadleaf-framework-web/src/main/java/org/broadleafcom
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="393" collapsed>
+<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="393">
 
 ---
 
@@ -231,7 +233,7 @@ The <SwmToken path="/core/broadleaf-framework-web/src/main/java/org/broadleafcom
 
 # Writing to the distributed queue
 
-The <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/util/queue/ZookeeperDistributedQueue.java" pos="394:5:5" line-data="    public void put(T e) throws InterruptedException {">`put`</SwmToken> function is called multiple times throughout the checkout process. It is responsible for adding elements to the distributed queue.
+The <SwmToken path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/util/queue/ZookeeperDistributedQueue.java" pos="394:5:5" line-data="    public void put(T e) throws InterruptedException {">`put`</SwmToken> function is called multiple times throughout the checkout process as can be seen in the diagram. It is responsible for adding elements to the distributed queue.
 
 ```java
     @Override
