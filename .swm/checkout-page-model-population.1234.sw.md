@@ -5,7 +5,7 @@ This document explains the process of populating model variables during the chec
 
 The flow starts by pre-populating command objects like order, shipping, and billing forms. It then initializes view states by adding help messages for these forms. Next, it checks the state of the order to determine which sections of the checkout page should be displayed. For example, it hides the shipping section if there are no shippable items. It also checks for third-party payments or unconfirmed credit cards and updates the view states accordingly. Finally, it initializes sections to an inactive state and sets their initial view state based on the state of other sections.
 
-<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="135" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="135" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -223,7 +223,7 @@ graph TD;
   L -->|No| N[Return null];
 ```
 
-<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="183" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="183" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -250,7 +250,7 @@ The `prepopulateCheckoutForms` method is responsible for prepopulating the check
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/checkout/service/CheckoutFormServiceImpl.java" line="110" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/checkout/service/CheckoutFormServiceImpl.java" line="110" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -276,7 +276,7 @@ The `prePopulateBillingInfoForm` method sets the billing address in the billing 
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/checkout/service/CheckoutFormServiceImpl.java" line="83" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/checkout/service/CheckoutFormServiceImpl.java" line="83" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -312,7 +312,7 @@ The `prePopulateShippingInfoForm` method sets the shipping address in the shippi
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/checkout/service/CheckoutFormServiceImpl.java" line="166" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/checkout/service/CheckoutFormServiceImpl.java" line="166" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -341,7 +341,7 @@ The `getAddressFromCCOrderPayment` method retrieves the billing address from the
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/service/SearchFacetDTOServiceImpl.java" line="114" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/service/SearchFacetDTOServiceImpl.java" line="114" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -425,7 +425,7 @@ graph TD;
   K -->|No| L[getTotalTax]
 ```
 
-<SwmSnippet path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/payment/service/OrderToPaymentRequestDTOServiceImpl.java" line="72" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/payment/service/OrderToPaymentRequestDTOServiceImpl.java" line="72" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -461,7 +461,7 @@ The `translateOrder` method converts an `Order` object into a `PaymentRequestDTO
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/payment/service/OrderToPaymentRequestDTOServiceImpl.java" line="204" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/payment/service/OrderToPaymentRequestDTOServiceImpl.java" line="204" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -487,7 +487,7 @@ The `populateBillTo` method iterates over the order payments to find the active 
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/payment/service/OrderToPaymentRequestDTOServiceImpl.java" line="156" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/payment/service/OrderToPaymentRequestDTOServiceImpl.java" line="156" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -523,7 +523,7 @@ The `populateTotals` method sets the total amount, shipping total, and tax total
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/payment/service/OrderToPaymentRequestDTOServiceImpl.java" line="187" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/payment/service/OrderToPaymentRequestDTOServiceImpl.java" line="187" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -554,7 +554,7 @@ The `populateShipTo` method uses the first shippable fulfillment group from the 
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/payment/service/OrderToPaymentRequestDTOServiceImpl.java" line="216" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/payment/service/OrderToPaymentRequestDTOServiceImpl.java" line="216" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -590,7 +590,7 @@ The `populateAddressInfo` method fills in the address details such as first name
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/order/domain/FulfillmentGroupFeeImpl.java" line="184" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/order/domain/FulfillmentGroupFeeImpl.java" line="184" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -668,7 +668,7 @@ graph TD;
   W --> U;
 ```
 
-<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="379" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="379" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -704,7 +704,7 @@ The function `populateFulfillmentOptionsAndEstimationOnModel` retrieves all fulf
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service/FulfillmentPricingServiceImpl.java" line="69" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service/FulfillmentPricingServiceImpl.java" line="69" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -740,7 +740,7 @@ The function `estimateCostForFulfillmentGroup` in `FulfillmentPricingServiceImpl
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service/fulfillment/provider/BandedFulfillmentPricingProvider.java" line="92" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework/src/main/java/org/broadleafcommerce/core/pricing/service/fulfillment/provider/BandedFulfillmentPricingProvider.java" line="92" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -776,7 +776,7 @@ The function `estimateCostForFulfillmentGroup` in `BandedFulfillmentPricingProvi
 
 </SwmSnippet>
 
-<SwmSnippet path="/common/src/main/java/org/broadleafcommerce/common/currency/util/BroadleafCurrencyUtils.java" line="45" repo-id="testRepoId">
+<SwmSnippet path="/common/src/main/java/org/broadleafcommerce/common/currency/util/BroadleafCurrencyUtils.java" line="45" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -802,7 +802,7 @@ The function `getMoney` converts a given amount to a `Money` object using the sp
 
 </SwmSnippet>
 
-<SwmSnippet path="/common/src/main/java/org/broadleafcommerce/common/money/Money.java" line="446" repo-id="testRepoId">
+<SwmSnippet path="/common/src/main/java/org/broadleafcommerce/common/money/Money.java" line="446" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -873,7 +873,7 @@ graph TD;
     I --> J[Check if the edit button is clicked for order info, billing info, or shipping info];
 ```
 
-<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="137" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="137" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -902,7 +902,7 @@ The `populateModelVariables` method begins by pre-populating command objects suc
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="165" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="165" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -922,7 +922,7 @@ The method then initializes view states by adding help messages for order, billi
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="222" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="222" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -946,7 +946,7 @@ The `populateSectionViewStates` method checks if order info, billing, and shippi
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="231" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="231" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -972,7 +972,7 @@ The method contains logic to show or hide sections based on the state of the ord
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="248" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="248" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -996,7 +996,7 @@ It also checks if the order contains third-party payments or unconfirmed credit 
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="260" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="260" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -1020,7 +1020,7 @@ The method toggles the payment info section based on the applied payments. For i
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="279" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="279" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -1038,7 +1038,7 @@ The sections are initialized to an INACTIVE view state. The method then creates 
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="291" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="291" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
@@ -1072,7 +1072,7 @@ The method adds the sections to a list and sets their help messages based on the
 
 </SwmSnippet>
 
-<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="326" repo-id="testRepoId">
+<SwmSnippet path="/core/broadleaf-framework-web/src/main/java/org/broadleafcommerce/core/web/processor/OnePageCheckoutProcessor.java" line="326" repo-id="Z2l0aHViJTNBJTNBQnJvYWRsZWFmQ29tbWVyY2UtZGVtbyUzQSUzQWdpbGFkbmF2b3Q=">
 
 ---
 
